@@ -1,0 +1,49 @@
+#config_version=5
+##! mode: mode2
+# mode2 config file
+
+mode:
+  start_events: mode2_start
+  stop_events: mode2_stop
+  priority: 200
+
+widgets:
+  mode2_start_banner:
+    type: text
+    text: MODE 2 STARTED
+    font_size: 50
+    color: lime
+    y: 80%
+    expire: 3s
+  mode2_end_banner:
+    type: text
+    text: MODE 2 ENDED
+    font_size: 50
+    color: red
+    y: 80%
+    expire: 3s
+
+widget_player:
+  mode_mode2_started: mode2_start_banner
+  mode_mode2_ended: mode2_end_banner
+
+variable_player:
+  black_widow_shot_mode2_hit:
+    score: 10000
+
+shots:
+  black_widow_shot_mode2:
+    switch: s_black_widow_ramp_opto
+    profile: mode2
+
+
+shot_profiles:
+  mode2:
+    states:
+      - name: flashing
+        show: flash
+        speed: 9
+      - name: lit
+        show: on
+    loop: false
+    block: true

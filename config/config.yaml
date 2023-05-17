@@ -1,0 +1,286 @@
+#config_version=5
+
+hardware:
+  platform: smart_virtual
+
+############################## MODES ####################################
+
+modes:
+  - base
+  - mode2
+
+############################# PLAYER ####################################
+
+player_vars:
+  score:
+    initial_value: 0
+  potato:
+    initial_value: 0
+
+switches:
+  s_left_flipper:
+    number:
+    tags: left_flipper
+  s_right_flipper:
+    number:
+    tags: right_flipper
+  s_trough1:
+    number: 1
+  s_trough2:
+    number: 2
+  s_trough3:
+    number: 3
+  s_trough4:
+    number: 4
+  s_trough5:
+    number: 5
+  s_trough6:
+    number: 6
+  s_trough7:
+    number: 7
+  s_trough_jam: #An Opto switch if a Trough fails to shoot a ball into the shooter lane
+    number: 8
+  s_plunger:
+    number: 10
+  s_start:
+    number:
+    tags: start
+  s_left_outlane:
+    number:
+  s_left_return:
+    number:
+  s_right_outlane:
+    number:
+  s_right_return:
+    number:
+    tags: playfield_active
+  s_left_slingshot:
+    number:
+  s_right_slingshot:
+    number:
+  s_shooter_lane:
+    number:
+  s_left_hulk_spinner:
+    number:
+  s_three_bank_drop_bottom:
+    number:
+  s_three_bank_drop_middle:
+    number:
+  s_three_bank_drop_top:
+    number:
+  s_far_right_bullseye_target:
+    number:
+  s_tower_opto_1:
+    number:
+  s_tower_opto_2:
+    number:
+  s_tower_opto_3:
+    number:
+  s_hulk_lane_top:
+    number:
+  s_black_widow_ramp_opto:
+    number:
+  s_right_gauntlet_ramp_opto:
+    number:
+  s_sanctum_target:
+    number:
+  s_left_bullseye_target:
+    number:
+  s_right_bullseye_target:
+    number:
+  s_left_pop_bumper:
+    number:
+  s_right_pop_bumper:
+    number:
+  s_bottom_pop_bumper:
+    number:
+  s_skill_shot_rollover:
+    number:
+  s_skill_right_ramp_exit_opto:
+    number:
+  s_captive_target:
+    number:
+  s_captain_marvel_loop_ramp_opto:
+    number:
+  s_captain_marvel_spinner:
+    number:
+  s_black_panther_right_orbit_enter:
+    number:
+  s_strange_spin_disc:
+    number:
+  s_elevator_hold:
+    number:
+  s_eject:
+    number:
+  s_top_popper:
+    number:
+  s_bottom_popper:
+    number:
+
+virtual_platform_start_active_switches:
+  - s_trough1
+  - s_trough2
+  - s_trough3
+
+keyboard:
+  z:
+    switch: s_left_flipper
+  m:
+    switch: s_right_flipper
+  s:
+    switch: s_start
+  q:
+    switch: s_right_return
+  1:
+    switch: s_trough1
+    toggle: true
+  2:
+    switch: s_trough2
+    toggle: true
+  3:
+    switch: s_trough3
+    toggle: true
+  4:
+    switch: s_trough4
+    toggle: true
+  5:
+    switch: s_trough5
+  6:
+    switch: s_trough6
+    toggle: true
+  7:
+    switch: s_trough7
+    toggle: true
+  p:
+    switch: s_plunger
+    toggle: true
+  b:
+    switch: s_black_widow_ramp_opto
+    toggle: true
+  r:
+    switch: s_right_gauntlet_ramp_opto
+    toggle: true
+  t:
+    event: mode2_start
+  y:
+    event: mode2_stop
+
+coils:
+  c_flipper_left_main:
+    number: 
+    default_pulse_ms: 20
+  c_flipper_left_hold:
+    number:
+    default_pulse_ms: 20
+    allow_enable: true
+  c_flipper_right_main:
+    number:
+  c_trough_eject:
+    number:
+  c_flipper_right_hold:
+    number:
+    allow_enable: true
+  c_left_slingshot:
+    number:
+  c_right_slingshot:
+    number:
+  c_left_pop_bumper:
+    number:
+  c_right_pop_bumper:
+    number:
+  c_bottom_pop_bumper:
+    number:
+
+ball_devices:
+  bd_trough:
+    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6, s_trough7, s_trough_jam
+    eject_coil: c_trough_eject
+    tags: trough, home, drain
+    jam_switch: s_trough_jam
+    eject_coil_jam_pulse: 15ms
+    eject_targets: bd_plunger
+    debug: true
+  bd_plunger:
+    ball_switches: s_plunger
+    mechanical_eject: true
+
+playfields:
+  playfield:
+    tags: default
+    default_source_device: bd_plunger
+
+flippers:
+  left_flipper:
+    main_coil: c_flipper_left_main
+    hold_coil: c_flipper_left_hold
+    activation_switch: s_left_flipper
+  right_flipper:
+    main_coil: c_flipper_right_main
+    hold_coil: c_flipper_right_hold
+    activation_switch: s_right_flipper
+
+autofire_coils:
+  left_slingshot:
+    coil: c_left_slingshot
+    switch: s_left_slingshot
+  right_slingshot:
+    coil: c_right_slingshot
+    switch: s_right_slingshot
+  left_pop_bumper:
+    coil: c_left_pop_bumper
+    switch: s_left_pop_bumper
+  right_pop_bumper:
+    coil: c_right_pop_bumper
+    switch: s_right_pop_bumper
+  bottom_pop_bumper:
+    coil: c_bottom_pop_bumper
+    switch: s_bottom_pop_bumper
+
+lights:
+  l_gauntlet:
+    number:
+  l_thor:
+    number:
+  l_thor_arrow:
+    number:
+  l_black_widow:
+    number:
+  l_black_widow_arrow:
+    number:
+  l_captain_america:
+    number:
+  l_captain_america_arrow:
+    number:
+  l_hulk:
+    number:
+  l_hulk_arrow:
+    number:
+  l_iron_man:
+    number:
+  l_iron_man_arrow:
+    number:
+  l_captain_marvel_arrow:
+    number:
+  l_black_panther:
+    number:
+  l_black_panther_arrow:
+    number:
+
+displays:
+  window:
+    width: 800
+    height: 600
+
+slides:
+  welcome_slide:
+    widgets:
+      - type: text
+        text: PINBALL!
+        font_size: 50
+        color: red
+      - type: rectangle
+        width: 240
+        height: 60
+
+slide_player:
+  init_done: welcome_slide

@@ -1,0 +1,271 @@
+device_size: 0.13
+light:
+  l_black_panther:
+    rotation: 20
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.6372243677588141
+    y: 0.667621776504298
+  l_black_panther_arrow:
+    rotation: 20
+    shape: ARROW
+    size: 0.06
+    x: 0.8052198828952285
+    y: 0.4068767908309456
+  l_black_widow:
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.5117104771396537
+    y: 0.6561604584527221
+  l_black_widow_arrow:
+    shape: ARROW
+    size: 0.06
+    x: 0.4711598355550019
+    y: 0.3027698185291309
+  l_captain_america:
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.44991902329637473
+    y: 0.6590257879656161
+  l_captain_marvel_arrow:
+    rotation: 20
+    shape: ARROW
+    size: 0.06
+    x: 0.6546032141522362
+    y: 0.4240687679083095
+  l_gauntlet:
+    rotation: 30
+    shape: ARROW
+    size: 0.06
+    x: 0.5599850504547154
+    y: 0.3123209169054441
+  l_hulk:
+    rotation: 340
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.3205431668120095
+    y: 0.6685768863419294
+  l_hulk_arrow:
+    rotation: 330
+    shape: ARROW
+    size: 0.06
+    x: 0.2336489348448985
+    y: 0.5081184336198663
+  l_iron_man:
+    rotation: 350
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.3861965865204934
+    y: 0.6628462273161414
+  l_iron_man_arrow:
+    rotation: 330
+    shape: ARROW
+    size: 0.06
+    x: 0.2529587641709231
+    y: 0.3801337153772684
+  l_thor:
+    rotation: 10
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.5735019309829326
+    y: 0.6609360076408788
+  l_thor_arrow:
+    rotation: 20
+    shape: ARROW
+    size: 0.06
+    x: 0.6932228728042855
+    y: 0.46418338108882523
+switch:
+  s_black_panther_right_orbit_enter:
+    rotation: 10
+    shape: RECTANGLE
+    size: 0.07
+    x: 0.8457705244798804
+    y: 0.34861509073543456
+  s_black_widow_ramp_opto:
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.45764295502678465
+    y: 0.060171919770773644
+  s_bottom_pop_bumper:
+    shape: CIRCLE
+    size: 0.08
+    x: 0.29157842282297247
+    y: 0.2148997134670487
+  s_captain_marvel_loop_ramp_opto:
+    rotation: 320
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.7414974461193473
+    y: 0.3075453677172875
+  s_captain_marvel_spinner:
+    rotation: 20
+    size: 0.06
+    x: 0.7009468045346954
+    y: 0.3457497612225406
+  s_captive_target:
+    shape: CIRCLE
+    size: 0.05
+    x: 0.7163946679955152
+    y: 0.43361986628462273
+  s_far_right_bullseye_target:
+    shape: CIRCLE
+    size: 0.04
+    x: 0.7685312071757818
+    y: 0.5682903533906399
+  s_hulk_lane_top:
+    shape: RECTANGLE
+    size: 0.07
+    x: 0.144823719945185
+    y: 0.2874880611270296
+  s_left_bullseye_target:
+    shape: CIRCLE
+    size: 0.04
+    x: 0.6198455213653918
+    y: 0.3514804202483286
+  s_left_hulk_spinner:
+    rotation: 340
+    shape: SQUARE
+    size: 0.05
+    x: 0.17765042979942694
+    y: 0.43935052531041074
+  s_left_outlane:
+    shape: RECTANGLE
+    size: 0.07
+    x: 0.0984801295627258
+    y: 0.7593123209169055
+  s_left_pop_bumper:
+    shape: CIRCLE
+    size: 0.08
+    x: 0.2722685934969478
+    y: 0.16141356255969438
+  s_left_return:
+    shape: RECTANGLE
+    size: 0.07
+    x: 0.17765042979942694
+    y: 0.7421203438395415
+  s_left_slingshot:
+    rotation: 340
+    shape: RECTANGLE
+    size: 0.07
+    x: 0.2368738549533044
+    y: 0.7351716243885007
+  s_right_bullseye_target:
+    shape: CIRCLE
+    size: 0.04
+    x: 0.5329512893982808
+    y: 0.2626552053486151
+  s_right_gauntlet_ramp_opto:
+    rotation: 40
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.8785972343341224
+    y: 0.10219675262655206
+  s_right_outlane:
+    shape: RECTANGLE
+    size: 0.07
+    x: 0.8496324903450854
+    y: 0.7602674307545368
+  s_right_pop_bumper:
+    shape: CIRCLE
+    size: 0.08
+    x: 0.41709231344213277
+    y: 0.16045845272206305
+  s_right_return:
+    shape: RECTANGLE
+    size: 0.07
+    x: 0.7762551389061917
+    y: 0.7449856733524355
+  s_right_slingshot:
+    rotation: 20
+    shape: RECTANGLE
+    size: 0.07
+    x: 0.7144636850629127
+    y: 0.725883476599809
+  s_sanctum_target:
+    shape: CIRCLE
+    size: 0.04
+    x: 0.30509530335118973
+    y: 0.2979942693409742
+  s_shooter_lane:
+    size: 0.05
+    x: 0.9328494309892035
+    y: 0.8942953020134228
+  s_skill_shot_rollover:
+    rotation: 340
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.5696399651177277
+    y: 0.1318051575931232
+  s_start:
+    size: 0.07
+    x: 0.16220256633860722
+    y: 0.9608404966571157
+  s_strange_spin_disc:
+    shape: CIRCLE
+    size: 0.03
+    x: 0.3437149620032391
+    y: 0.3648519579751672
+  s_three_bank_drop_bottom:
+    shape: CIRCLE
+    size: 0.04
+    x: 0.13516880528217268
+    y: 0.5787965616045846
+  s_three_bank_drop_middle:
+    shape: CIRCLE
+    size: 0.04
+    x: 0.15640961754079982
+    y: 0.5501432664756447
+  s_three_bank_drop_top:
+    shape: CIRCLE
+    size: 0.04
+    x: 0.16992649806901708
+    y: 0.5243553008595988
+  s_tower_opto_1:
+    shape: CIRCLE
+    size: 0.04
+    x: 0.19889124205805409
+    y: 0.2110792741165234
+  s_tower_opto_2:
+    shape: CIRCLE
+    size: 0.04
+    x: 0.19502927619284913
+    y: 0.18529130850047754
+  s_tower_opto_3:
+    shape: CIRCLE
+    size: 0.04
+    x: 0.18923632739504173
+    y: 0.1556829035339064
+  s_trough1:
+    rotation: 330
+    size: 0.05
+    x: 0.8573564220754953
+    y: 0.8548233046800382
+  s_trough2:
+    rotation: 330
+    size: 0.05
+    x: 0.7994269340974213
+    y: 0.8720152817574022
+  s_trough3:
+    rotation: 330
+    size: 0.05
+    x: 0.7395664631867448
+    y: 0.8911174785100286
+  s_trough4:
+    rotation: 330
+    size: 0.05
+    x: 0.6777750093434658
+    y: 0.9092645654250239
+  s_trough5:
+    rotation: 330
+    size: 0.05
+    x: 0.6237074872305968
+    y: 0.9245463228271251
+  s_trough6:
+    size: 0.05
+    x: 0.5580540675221128
+    y: 0.9302769818529132
+  s_trough7:
+    size: 0.05
+    x: 0.491866063612489
+    y: 0.9312080536912751

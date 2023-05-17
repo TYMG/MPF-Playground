@@ -1,0 +1,59 @@
+#show_version=5
+##! show: attract_light_show
+- duration: 1
+  lights:
+    l_hulk: red
+    l_iron_man: coral
+    l_captain_america: Yellow
+    l_black_widow: LimeGreen
+    l_thor: Blue
+    l_black_panther: BlueViolet
+- duration: 1
+  lights:
+    l_hulk: coral
+    l_iron_man: Yellow
+    l_captain_america: LimeGreen
+    l_black_widow: Blue
+    l_thor: BlueViolet
+    l_black_panther: red
+- duration: 1
+  lights:
+    l_hulk: Yellow
+    l_iron_man: LimeGreen
+    l_captain_america: Blue
+    l_black_widow: BlueViolet
+    l_thor: red
+    l_black_panther: coral
+- duration: 1
+  lights:
+    l_hulk: LimeGreen
+    l_iron_man: Blue
+    l_captain_america: BlueViolet
+    l_black_widow: red
+    l_thor: coral
+    l_black_panther: Yellow
+- duration: 1
+  lights:
+    l_hulk: Blue
+    l_iron_man: BlueViolet
+    l_captain_america: red
+    l_black_widow: coral
+    l_thor: Yellow
+    l_black_panther: LimeGreen
+- duration: 1
+  lights:
+    l_hulk: BlueViolet
+    l_iron_man: red
+    l_captain_america: coral
+    l_black_widow: Yellow
+    l_thor: LimeGreen
+    l_black_panther: Blue
+- duration: 1
+  lights:
+    l_hulk: BlueViolet
+    l_iron_man: red
+    l_captain_america: coral
+    l_black_widow: Yellow
+    l_thor: LimeGreen
+    l_black_panther: Blue
+

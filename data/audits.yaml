@@ -1,0 +1,67 @@
+events:
+  game_ended: 4
+  game_started: 29
+player:
+  score:
+    average: 4000.0
+    top:
+    - 11000
+    - 5000
+    - 0
+    - 0
+    total: 4
+shots:
+  black_widow_shot: 30
+  black_widow_shot_mode2: 3
+switches:
+  s_black_panther_right_orbit_enter: 0
+  s_black_widow_ramp_opto: 63
+  s_bottom_pop_bumper: 2
+  s_bottom_popper: 0
+  s_captain_marvel_loop_ramp_opto: 0
+  s_captain_marvel_spinner: 0
+  s_captive_target: 0
+  s_eject: 0
+  s_elevator_hold: 0
+  s_far_right_bullseye_target: 0
+  s_hulk_lane_top: 0
+  s_left_bullseye_target: 0
+  s_left_flipper: 7
+  s_left_hulk_spinner: 7
+  s_left_jet: 0
+  s_left_outlane: 0
+  s_left_pop_bumper: 3
+  s_left_return: 0
+  s_left_slingshot: 2
+  s_plunger: 40
+  s_right_bullseye_target: 0
+  s_right_flipper: 13
+  s_right_gauntlet_ramp_opto: 37
+  s_right_inlane: 11
+  s_right_jet: 0
+  s_right_outlane: 0
+  s_right_pop_bumper: 5
+  s_right_return: 28
+  s_right_slingshot: 2
+  s_sanctum_target: 0
+  s_shooter_lane: 9
+  s_skill_right_ramp_exit_opto: 0
+  s_skill_shot_rollover: 0
+  s_start: 1
+  s_strange_spin_disc: 0
+  s_three_bank_drop_bottom: 0
+  s_three_bank_drop_middle: 0
+  s_three_bank_drop_top: 0
+  s_top_popper: 0
+  s_top_slingshot: 0
+  s_tower_opto_1: 0
+  s_tower_opto_2: 0
+  s_tower_opto_3: 0
+  s_trough1: 25
+  s_trough2: 12
+  s_trough3: 10
+  s_trough4: 6
+  s_trough5: 9
+  s_trough6: 11
+  s_trough7: 31
+  s_trough_jam: 0
